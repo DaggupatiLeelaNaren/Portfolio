@@ -1,0 +1,137 @@
+.hero{
+
+    padding-top:100px;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--bg-color);
+
+    transition:.35s;
+
+}
+
+.hero-box{
+
+    width:700px;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:var(--card-bg);
+
+    box-shadow:var(--shadow);
+
+    border:1px solid var(--border);
+
+    transition:.35s;
+
+}
+
+.hero-box:hover{
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+.hero-box h1{
+
+    font-size:50px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.hero-box p{
+
+    font-size:24px;
+
+    color:var(--secondary-text);
+
+    line-height:1.8;
+
+}
+
+.hero-box span{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+}
+
+.hero-box button{
+
+    margin-top:35px;
+
+    border:none;
+
+    background:var(--primary);
+
+    color:var(--button-text);
+
+    padding:15px 32px;
+
+    border-radius:15px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.hero-box button:hover{
+
+    background:var(--primary-hover);
+
+    transform:translateY(-5px);
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    padding:100px 20px;
+
+}
+
+.hero-box{
+
+    width:100%;
+
+    padding:35px;
+
+}
+
+.hero-box h1{
+
+    font-size:36px;
+
+}
+
+.hero-box p{
+
+    font-size:18px;
+
+}
+
+}

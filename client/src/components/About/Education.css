@@ -1,0 +1,363 @@
+/* ==========================================
+   EDUCATION SECTION
+========================================== */
+
+.timeline{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:1000px;
+
+    margin:60px auto;
+
+}
+
+/* Vertical Line */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:35px;
+
+    top:0;
+
+    bottom:0;
+
+    width:4px;
+
+    background:linear-gradient(
+        to bottom,
+        #2563eb,
+        #60a5fa
+    );
+
+    border-radius:20px;
+
+}
+
+/* Timeline Item */
+
+.timeline-item{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:35px;
+
+    margin-bottom:60px;
+
+}
+
+/* Timeline Circle */
+
+.timeline-circle{
+
+    width:70px;
+
+    height:70px;
+
+    min-width:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:28px;
+
+    z-index:2;
+
+    transition:.35s;
+
+}
+
+/* Light Theme */
+
+.light-theme .timeline-circle{
+
+    background:#2563eb;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+/* Dark Theme */
+
+.dark-theme .timeline-circle{
+
+    background:#1e3a8a;
+
+    color:#bfdbfe;
+
+    border:1px solid #3b82f6;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.25);
+
+}
+
+.timeline-item:hover .timeline-circle{
+
+    transform:scale(1.08);
+
+}
+
+/* Hover Colors */
+
+.light-theme .timeline-item:hover .timeline-circle{
+
+    background:#1d4ed8;
+
+}
+
+.dark-theme .timeline-item:hover .timeline-circle{
+
+    background:#2563eb;
+
+}
+
+/* ==========================================
+   EDUCATION CARD
+========================================== */
+
+.education-card{
+
+    flex:1;
+
+    background:var(--card-bg);
+
+    padding:30px;
+
+    border-radius:22px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    border:1px solid var(--border);
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#2563eb;
+
+    box-shadow:var(--hover-shadow);
+
+}
+
+/* ==========================================
+   HEADING
+========================================== */
+
+.education-card h3{
+
+    font-size:28px;
+
+    color:var(--text-color);
+
+    margin-bottom:8px;
+
+    font-weight:700;
+
+}
+
+.education-card h4{
+
+    color:#2563eb;
+
+    font-size:19px;
+
+    margin-bottom:18px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   META
+========================================== */
+
+.education-meta{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+    margin-bottom:20px;
+
+}
+
+.education-meta span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 15px;
+
+    border-radius:12px;
+
+    font-size:14px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+/* Light Theme */
+
+.light-theme .education-meta span{
+
+    background:#f5f8ff;
+
+    color:#374151;
+
+}
+
+/* Dark Theme */
+
+.dark-theme .education-meta span{
+
+    background:#23395d;
+
+    color:#e2e8f0;
+
+    border:1px solid #3b82f6;
+
+}
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.education-card p{
+
+    color:var(--secondary-text);
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:768px){
+
+.timeline::before{
+
+    left:22px;
+
+}
+
+.timeline-item{
+
+    gap:18px;
+
+}
+
+.timeline-circle{
+
+    width:45px;
+
+    height:45px;
+
+    min-width:45px;
+
+    font-size:18px;
+
+}
+
+.education-card{
+
+    padding:22px;
+
+}
+
+.education-card h3{
+
+    font-size:22px;
+
+}
+
+.education-card h4{
+
+    font-size:17px;
+
+}
+
+.education-meta{
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.education-meta span{
+
+    width:fit-content;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.timeline::before{
+
+    display:none;
+
+}
+
+.timeline-item{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.education-card{
+
+    width:100%;
+
+}
+
+.education-meta{
+
+    align-items:center;
+
+}
+
+.education-meta span{
+
+    justify-content:center;
+
+}
+
+}

@@ -1,0 +1,125 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    background:var(--bg-color);
+    color:var(--text-color);
+    transition:all .35s ease;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    cursor:pointer;
+    font-family:inherit;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================
+   LIGHT THEME
+=========================== */
+
+.light-theme{
+
+    --bg-color:#f5f7fb;
+
+    --section-bg:#ffffff;
+
+    --card-bg:#ffffff;
+
+    --navbar-bg:#ffffff;
+
+    --footer-bg:#ffffff;
+
+    --text-color:#111827;
+
+    --secondary-text:#6b7280;
+
+    --primary:#2962ff;
+
+    --primary-hover:#1d4ed8;
+
+    --border:#e5e7eb;
+
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+    --hover-shadow:0 20px 45px rgba(41,98,255,.15);
+
+    --button-text:#ffffff;
+
+}
+
+/* ===========================
+   DARK THEME
+=========================== */
+
+.dark-theme{
+
+    --bg-color:#0f172a;
+
+    --section-bg:#111827;
+
+    --card-bg:#1e293b;
+
+    --navbar-bg:#111827;
+
+    --footer-bg:#111827;
+
+    --text-color:#f8fafc;
+
+    --secondary-text:#cbd5e1;
+
+    --primary:#60a5fa;
+
+    --primary-hover:#3b82f6;
+
+    --border:#334155;
+
+    --shadow:0 12px 35px rgba(0,0,0,.45);
+
+    --hover-shadow:0 18px 45px rgba(96,165,250,.20);
+
+    --button-text:#ffffff;
+
+}
+
+/* ===========================
+   MAIN WRAPPER
+=========================== */
+
+.light-theme,
+.dark-theme{
+
+    min-height:100vh;
+
+    background:var(--bg-color);
+
+    color:var(--text-color);
+
+    transition:all .35s ease;
+
+}
